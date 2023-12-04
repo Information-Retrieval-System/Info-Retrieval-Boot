@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Boot Information Retrieval System</title>
+</head>
+<body>
+<h1>Welcome to UWaterloo CS651 Grad Students: Info Retrieval System </h1>
+
+<p th:text="${message}"></p>
+
+
+<form th:action="@{/search}" method="get">
+    <label for="query">Enter your search query:</label>
+    <input type="text" id="query" name="query" required/>
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>

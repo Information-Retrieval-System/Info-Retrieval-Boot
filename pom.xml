@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>ca.uwaterloo.cs451</groupId>
+	<artifactId>indexer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>indexer</name>
+	<description>indexer</description>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.datastax.oss</groupId>
+			<artifactId>java-driver-core</artifactId>
+			<version>4.14.0</version> <!-- Replace with the latest version -->
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.datastax.oss</groupId>-->
+<!--			<artifactId>java-driver-mapper-runtime</artifactId>-->
+<!--			<version>4.14.0</version> &lt;!&ndash; Replace with the version you are using &ndash;&gt;-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.datastax.cassandra</groupId>-->
+<!--			<artifactId>cassandra-driver-mapping</artifactId>-->
+<!--			<version>3.3.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>io.dropwizard.metrics</groupId>-->
+<!--			<artifactId>metrics-core</artifactId>-->
+<!--			<version>4.1.17</version> &lt;!&ndash; Use the version compatible with your project &ndash;&gt;-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
