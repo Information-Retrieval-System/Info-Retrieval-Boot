@@ -11,9 +11,17 @@
 
 
 <form th:action="@{/search}" method="get">
-    <label for="query">Enter your search query:</label>
-    <input type="text" id="query" name="query" required/>
-    <button type="submit">Search</button>
+    <label style="font-size:20pt;" for="query">Enter your search query:</label>
+    <input style="height:40px;font-size:14pt;" size="56" type="text" id="query" name="query" required/>
+    <!-- Dropdown menu -->
+    <label style="font-size:18pt;" for="algorithm">Select Ranking Model:</label>
+    <select style="height:50px; font-size:14pt;" id="algorithm" name="algorithm">
+        <option value="VSM">VSM</option>
+        <option value="TFIDF">TFIDF</option>
+        <option value="BM25">BM25</option>
+        <!-- Add more options as needed -->
+    </select>
+    <button style="font-size:16pt;" type="submit">Search</button>
 </form>
 </body>
 </html>
